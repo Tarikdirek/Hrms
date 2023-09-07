@@ -12,11 +12,13 @@ import javax.persistence.InheritanceType;
 import javax.persistence.Table;
 
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name="verification_codes")
-@Data
+@Getter
+@Setter
 @Inheritance(strategy = InheritanceType.JOINED)
 public class EmailVerification {
 	

@@ -2,7 +2,7 @@ package project.hmrs.dataAccess.abstracts;
 
 import java.util.List;
 
-import org.springframework.data.domain.Sort;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import project.hmrs.entities.concretes.JobAdvertisement;

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import project.hmrs.business.abstracts.JobSeekerService;
 import project.hmrs.core.utilities.results.DataResult;
 import project.hmrs.core.utilities.results.Result;
-import project.hmrs.core.utilities.results.SuccessResult;
 import project.hmrs.entities.concretes.users.JobSeeker;
 
 @RestController

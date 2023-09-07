@@ -14,7 +14,6 @@ import project.hmrs.core.utilities.results.SuccessDataResult;
 import project.hmrs.core.utilities.results.SuccessResult;
 import project.hmrs.dataAccess.abstracts.EmployerDao;
 import project.hmrs.entities.concretes.users.Employer;
-import project.hmrs.entities.concretes.verifications.EmployerEmailVerification;
 
 @Service
 public class EmployerManager implements EmployerService {

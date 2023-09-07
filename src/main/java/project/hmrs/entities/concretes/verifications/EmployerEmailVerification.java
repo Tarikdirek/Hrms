@@ -5,14 +5,17 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import lombok.Data;
+
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 import project.hmrs.entities.concretes.users.Employer;
 
 
 @Entity
 @Table(name="employers_verification_codes")
-@Data
+@Getter
+@Setter
 public class EmployerEmailVerification extends EmailVerification {
 	
 	@OneToOne

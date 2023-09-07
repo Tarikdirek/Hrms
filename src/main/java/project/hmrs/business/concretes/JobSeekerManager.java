@@ -82,15 +82,5 @@ public class JobSeekerManager implements JobSeekerService {
 	
 	}
 	
-	private Result checkIfEmailExist(JobSeeker jobSeeker) {
-		
-		 
-		
-		
-		
-		if (emailVerificationService.createJobSeekerEmailVerificationCode(jobSeeker)) {
-			return new SuccessResult();
-		}return new ErrorResult();
-	
-	}
+
 }

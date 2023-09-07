@@ -4,11 +4,15 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+
 
 @Entity
 @Table(name="system_employees")
-@Data
+@Getter
+@Setter
 public class SystemEmployee extends User {
 	
 	@Column(name = "id")
