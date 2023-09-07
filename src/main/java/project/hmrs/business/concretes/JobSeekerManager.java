@@ -16,6 +16,7 @@ import project.hmrs.core.utilities.results.SuccessDataResult;
 import project.hmrs.core.utilities.results.SuccessResult;
 import project.hmrs.dataAccess.abstracts.JobSeekerDao;
 import project.hmrs.entities.concretes.users.JobSeeker;
+import project.hmrs.entities.dtos.JobSeekerMiniCvDto;
 
 @Service
 public class JobSeekerManager implements JobSeekerService {
@@ -80,6 +81,12 @@ public class JobSeekerManager implements JobSeekerService {
 			return new SuccessResult();
 		}return new ErrorResult();
 	
+	}
+
+	@Override
+	public DataResult<List<JobSeekerMiniCvDto>>  getJobSeekerWithFullCv() {
+		var result = jobSeekerDao. getJobSeekerWithFullCv();
+		return new SuccessDataResult<List<JobSeekerMiniCvDto>>(result, "Başarılı");
 	}
 	
 

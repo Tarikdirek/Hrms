@@ -35,10 +35,10 @@ public class JobSeekerExperienceInfo {
 	private String role;
 	
 	@Column(name = "start_date")
-	private Date startDate;
+	private Date jobStartDate;
 	
 	@Column(name = "end_date")
-	private Date endDate;
+	private Date jobEndDate;
 	
 	@ManyToOne
 	@JoinColumn(name = "job_seeker_id")

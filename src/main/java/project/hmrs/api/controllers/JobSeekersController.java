@@ -14,6 +14,7 @@ import project.hmrs.business.abstracts.JobSeekerService;
 import project.hmrs.core.utilities.results.DataResult;
 import project.hmrs.core.utilities.results.Result;
 import project.hmrs.entities.concretes.users.JobSeeker;
+import project.hmrs.entities.dtos.JobSeekerMiniCvDto;
 
 @RestController
 @RequestMapping("api/jobseekers")
@@ -30,6 +31,11 @@ public class JobSeekersController {
 	@GetMapping("/getall")
 	public DataResult<List<JobSeeker>>  getAll(){
 		return jobSeekerService.getAll();
+	}
+	
+	@GetMapping("/getcvinfo")
+	public DataResult<List<JobSeekerMiniCvDto>> getJobSeekerWithFullCv(){
+		return jobSeekerService.getJobSeekerWithFullCv();
 	}
 	
 	@PostMapping("/add")
@@ -51,4 +57,5 @@ public class JobSeekersController {
 		return jobSeekerService.update(jobSeeker);
 		
 	}
+	
 }
